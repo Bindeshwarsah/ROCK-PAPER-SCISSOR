@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logoContainer">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+            </div>
+    
+            <div class="scoreContainer">
+                <div class="scoreBox">
+                    <p>COMPUTER</p>
+                    <span>SCORE</span>
+                    <div id="computerScore" class="scoreValue">0</div>
+                </div>
+                <div class="scoreBox">
+                    <p>YOUR</p>
+                    <span>SCORE</span>
+                    <div id="userScore" class="scoreValue">0</div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="playContainer">
+            <div class="triangle">
+                <div class="topLine"></div>
+                <div class="rightLine"></div>
+                <div class="leftLine"></div>
+            </div>
+            <div class="rockCircle userChoice">
+                
+                <img src="images/rock-circle.svg" class="circle" alt="rockCircle">
+                <div class="rockImage Images">
+                    <img src="images/rock.png" alt="rockImage">
+                </div>
+            </div>
+            <div class="paperCircle userChoice">
+                <img src="images/paper-circle.svg" class="circle" alt="paperCircle">
+                <div class="paperImage Images">
+                    <img src="images/paper.png" alt="paperImage">
+                </div>
+            </div>
+            <div class="scissorCircle userChoice">
+                <img src="images/scissor-circle.svg" class="circle" alt="scissorCircle">
+                <div class="scissorImage Images">
+                    <img src="images/scissor.png" alt="scissorImage">
+                </div>
+            </div>
+
+
+            <div class="rockCircle computerChoice">
+                
+                <img src="images/rock-circle.svg" alt="rockCircle">
+                <div class="rockImage Images">
+                    <img src="images/rock.png" alt="rockImage">
+                </div>
+            </div>
+            <div class="paperCircle computerChoice">
+                <img src="images/paper-circle.svg" alt="paperCircle">
+                <div class="paperImage Images">
+                    <img src="images/paper.png" alt="paperImage">
+                </div>
+            </div>
+            <div class="scissorCircle computerChoice">
+                <img src="images/scissor-circle.svg" alt="scissorCircle">
+                <div class="scissorImage Images">
+                    <img src="images/scissor.png" alt="scissorImage">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="winLossContainer">
+            <h1 class="userPickTitle">YOU PICKED</h1>
+            <div class="result">
+                <div class="decision">
+                    <h1 class="winLoss">YOU WIN</h1>
+                    <span id="span">AGAINST PC</span>
+                </div>
+                <div class="newGame">
+                    <button type="button" class="playButton" id="playButton">PLAY AGAIN</button>
+                </div>
+            </div>
+            <h1 class="computerPickTitle">PC PICKED</h1>
+    
+        </div>
+        <div class="userWinBubble">
+            <div class="userSecondOuterBubble">
+                <div class="userFirstOuterBubble">
+                    <img src="assets/Ellipse.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="computerWinBubble">
+            <div class="computerSecondOuterBubble">
+                <div class="computerFirstOuterBubble">
+                    <img src="assets/Ellipse.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="rule">
+            <p>Game Rules</p>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <div class="crossBtn">
+                <img src="images/rulebtn.svg" alt="rulebutton">
+                <p>x</p>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="ruleBtn" class="ruleBtn" type="button">RULES</button>
+            <button id="nextButton" type="button">NEXT</button>
+    
+        </div>
+      
+    </div>
+
+    <div class="hurrayContainer">
+        <div class="secContainer">
+            <div class="cupAndStar">
+                <img src="assets/cup.png" id="cup" alt="cup">
+                <div class="star" id="star1">
+                    <img src="assets/Star 1.svg" alt="star1">
+                </div>
+                <div class="star" id="star2">
+                    <img src="assets/Star 2.svg" alt="star2">
+                </div>
+                <div class="star" id="star3">
+                    <img src="assets/Star 3.svg" alt="star3">
+                </div>
+                <div class="star" id="star4">
+                    <img src="assets/Star 4.svg" alt="star4">
+                </div>
+                <div class="star" id="star5">
+                    <img src="assets/Star 5.svg" alt="star5">
+                </div>
+                <div class="star" id="star6">
+                    <img src="assets/Star 6.svg" alt="star6">
+                </div>
+                <div class="star" id="star7">
+                    <img src="assets/Star 7.svg" alt="star7">
+                </div>
+                <div class="star" id="star8">
+                    <img src="assets/Star 8.svg" alt="star8">
+                </div>
+                <div class="star" id="star9">
+                    <img src="assets/Star 9.svg" alt="star9">
+                </div>
+            </div>
+            <div class="happyMessage">
+                <h1>HURRAY!!</h1>
+                <p>YOU WON THE GAME</p>
+            </div>
+            <div class="playbtn">
+                <button type="button"  id="playBtn" class="playButton">PLAY AGAIN</button>
+            </div>
+                
+            <div class="ruleBtns">
+                <button type="button" id="ruleBtn" class="ruleBtn">RULES</button>
+            </div>      
+            <div class="rule">
+                <p>Game Rules</p>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+                <div class="crossBtn">
+                    <img src="images/rulebtn.svg" alt="rulebutton">
+                    <p id="crossbtn">x</p>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
